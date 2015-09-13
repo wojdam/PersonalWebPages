@@ -1,0 +1,182 @@
+﻿#menuNavigation {
+    width: 90%;
+    margin: 0 0 0 5%;
+    padding: 0 0 0 0;
+    list-style: none;  
+    background-color: #111;
+    background-image: linear-gradient(45deg, #444, #111);
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 5px 4px #9c9c9c;
+    -ms-box-shadow: 10px 5px 4px #9c9c9c;
+    box-shadow: 10px 5px 4px #9c9c9c;
+    position: fixed;
+    z-index: 9999999;
+}
+
+#menuNavigation li {
+    float: left;
+    padding: 0 0 5px 0;
+    position: relative;
+}
+
+#menuNavigation a {
+    float: left;
+    height: 25px;
+    padding: 0 25px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    -ms-text-shadow: 0 1px 0 #000;
+    text-shadow: 10px 10px 1px #000;
+}
+
+#menuNavigation li:hover > a {
+    color: #fafafa;
+}
+
+#menuNavigation li:hover > ul {
+    display: block;
+}
+
+/* Sub-menuNavigation */
+#menuNavigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 15px 0 0;    
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 99999;    
+    background-color: #444;   
+    background-image: linear-gradient(45deg, #777, #111);    
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menuNavigation ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -webkit-box-shadow: 0 1px 0 #111111, 
+                0 2px 0 #777777;
+    -ms-box-shadow: 0 1px 0 #111111, 
+                0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 
+                0 2px 0 #777777;
+}
+
+#menuNavigation ul li:last-child {
+    -webkit-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+}
+
+#menuNavigation ul a {    
+    padding: 15px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*:first-child+html #menuNavigation ul a { /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menuNavigation ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+
+#menuNavigation ul li:first-child a {
+    -ms-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menuNavigation ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menuNavigation ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#menuNavigation ul li:last-child a {
+    -ms-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menuNavigation:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #menuNavigation             { zoom: 1; } /* IE6 */
+*:first-child+html #menuNavigation { zoom: 1; } /* IE7 */
+
+#footerStyle {
+    width: 90%;
+    margin: 0 0 0 5%;
+    position: fixed;
+    bottom: 10px;
+    background-color: #111;
+    background-image: linear-gradient(45deg, #444, #111);
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 5px 4px #9c9c9c;
+    -ms-box-shadow: 10px 5px 4px #9c9c9c;
+    box-shadow: 10px 5px 4px #9c9c9c;
+    z-index: 9999999;
+}
+
+#footerStyleText {
+    color: #999;
+    float: right;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    color: #999;
+    -ms-text-shadow: 0 1px 0 #000;
+    text-shadow: 0 1px 0 #000;
+}
+
+.mainDocumentStyle {
+    width: 70%;
+    margin: 10px 50px 50px 10%;
+    padding: 50px 5% 10px 5%;
+    position: relative;
+    background-color: #bdbdbd;
+    -webkit-box-shadow: 10px 5px 4px #9c9c9c;
+    -ms-box-shadow: 10px 5px 4px #9c9c9c;
+    box-shadow: 10px 5px 4px #9c9c9c;
+    z-index: 0;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#mainStyle {
+    background-color: #d3d3d6;
+    margin: 0 auto 0 auto;
+    position: relative;
+}

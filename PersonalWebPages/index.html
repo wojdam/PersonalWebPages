@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Martin Vojík - Personal pages</title>
+    <link rel="stylesheet" type="text/css" href="indexStyleSheet.css"/>
+</head>
+<body id="mainStyle">
+<!--Main menu navigation-->
+    <ul id="menuNavigation">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">My Projects</a>
+            <ul>
+                <li><a href="#" onclick="redirectTo('MyCNCMachine')">My CNC machine</a></li>
+                <li><a href="#">Arduino programming</a></li>
+                <li><a href="#">Development tools</a></li>
+                <li><a href="#" onclick="redirectTo('LoremIpsum')">Web design</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Work</a>
+            <ul>
+                <li><a href="#">Work 1</a></li>
+                <li><a href="#">Work 2</a></li>
+                <li><a href="#">Work 3</a></li>
+                <li><a href="#">Work 4</a></li>
+                <li><a href="#">Work 5</a></li>
+                <li><a href="#">Work 6</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+
+<div class="mainDocumentStyle" id="documentContent">
+</div>
+
+<footer id="footerStyle">
+    <div id="footerStyleText">
+        &copy; 2015 Created by Martin Vojík
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="Router.js"></script>
+</body>
+</html>
