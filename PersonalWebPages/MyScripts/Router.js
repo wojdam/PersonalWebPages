@@ -1,5 +1,5 @@
 ﻿
-// document is ready DOM constructed.
+// document is ready and DOM constructed.
 $(function () {
     defaultPage();
 });
