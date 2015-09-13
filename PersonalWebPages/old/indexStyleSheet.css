@@ -98,7 +98,7 @@
 
 #menuNavigation ul li:first-child a {
     -ms-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 0px 0 0;
 }
 
 #menuNavigation ul li:first-child a:after {
