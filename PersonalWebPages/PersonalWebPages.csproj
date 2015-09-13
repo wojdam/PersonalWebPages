@@ -58,13 +58,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutMe.html" />
+    <Content Include="ContactMe.html" />
     <Content Include="Home.html" />
     <Content Include="index.html" />
     <Content Include="indexStyleSheet.css" />
     <Content Include="LoremIpsum.html" />
     <Content Include="MyCNCMachine.html" />
-    <Content Include="old\index.html" />
-    <Content Include="old\indexStyleSheet.css" />
     <Content Include="MyScripts\Router.js" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
