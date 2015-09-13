@@ -1,10 +1,10 @@
 ﻿#menuNavigation {
-    width: 80%;
-    margin: 0 0 0 10%;
-    padding: 7px 0 0 0;
+    width: 90%;
+    margin: 0 0 0 5%;
+    padding: 0 0 0 0;
     list-style: none;  
     background-color: #111;
-    background-image: linear-gradient(#444, #111);
+    background-image: linear-gradient(45deg, #444, #111);
     -ms-border-radius: 15px;
     border-radius: 15px;
     -webkit-box-shadow: 10px 5px 4px #9c9c9c;
@@ -16,7 +16,7 @@
 
 #menuNavigation li {
     float: left;
-    padding: 0 0 10px 0;
+    padding: 0 0 5px 0;
     position: relative;
 }
 
@@ -29,7 +29,7 @@
     font: bold 12px/25px Arial, Helvetica;
     text-decoration: none;
     -ms-text-shadow: 0 1px 0 #000;
-    text-shadow: 0 1px 0 #000;
+    text-shadow: 10px 10px 1px #000;
 }
 
 #menuNavigation li:hover > a {
@@ -47,11 +47,11 @@
     padding: 0 15px 0 0;    
     display: none;
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 0;
     z-index: 99999;    
     background-color: #444;   
-    background-image: linear-gradient(#444, #111);    
+    background-image: linear-gradient(45deg, #777, #111);    
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
@@ -77,7 +77,7 @@
 }
 
 #menuNavigation ul a {    
-    padding: 10px;
+    padding: 15px;
     height: auto;
     line-height: 1;
     display: block;
@@ -136,12 +136,12 @@
 *:first-child+html #menuNavigation { zoom: 1; } /* IE7 */
 
 #footerStyle {
-    width: 80%;
-    margin: 0 0 0 10%;
+    width: 90%;
+    margin: 0 0 0 5%;
     position: fixed;
     bottom: 10px;
     background-color: #111;
-    background-image: linear-gradient(#444, #111);
+    background-image: linear-gradient(45deg, #444, #111);
     -ms-border-radius: 15px;
     border-radius: 15px;
     -webkit-box-shadow: 10px 5px 4px #9c9c9c;
@@ -161,13 +161,12 @@
     text-shadow: 0 1px 0 #000;
 }
 
-#mainDocumentStyle {
-    width: 70%;
+.mainDocumentStyle {
+    width: 74%;
     margin: 10px 50px 50px 10%;
-    
-    padding: 50px 5% 0px 5%;
+    padding: 50px 3% 10px 3%;
     position: relative;
-    background-color: #878383;
+    background-color: #bdbdbd;
     -webkit-box-shadow: 10px 5px 4px #9c9c9c;
     -ms-box-shadow: 10px 5px 4px #9c9c9c;
     box-shadow: 10px 5px 4px #9c9c9c;

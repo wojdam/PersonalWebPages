@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Home.html" />
     <Content Include="index.html" />
     <Content Include="indexStyleSheet.css" />
     <Content Include="LoremIpsum.html" />
@@ -65,6 +66,11 @@
     <Content Include="old\index.html" />
     <Content Include="old\indexStyleSheet.css" />
     <Content Include="Router.js" />
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\wojdam.wz.cz.pubxml" />
