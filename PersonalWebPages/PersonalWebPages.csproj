@@ -66,7 +66,10 @@
     <Content Include="LoremIpsum.html" />
     <Content Include="MyCNCMachine.html" />
     <Content Include="MyScripts\Router.js" />
+    <Content Include="MyScripts\TestJQuery.js" />
     <Content Include="packages.config" />
+    <Content Include="TestjQuery.html" />
+    <Content Include="TestNewMenu.html" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />

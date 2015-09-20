@@ -151,7 +151,6 @@
 }
 
 #footerStyleText {
-    color: #999;
     float: right;
     margin-right: 10px;
     text-transform: uppercase;
@@ -179,4 +178,41 @@
     background-color: #d3d3d6;
     margin: 0 auto 0 auto;
     position: relative;
+}
+
+h1 {
+    font: bold 24px/48px Arial, Helvetica;
+     background-color: #111;
+    background-image: linear-gradient(45deg, #444, #111);
+    text-align: left;
+    position: relative;
+    color: #999;
+    margin: 0px -47px 30px -47px;
+    padding: 10px 0; 
+    text-shadow: 0 1px rgba(0,0,0,.8);
+    background-image:  linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+    -moz-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+    box-shadow: 0 2px 0 rgba(0,0,0,.3);
+}
+
+h1:before, 
+h1:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+    bottom: -10px;
+}
+
+h1:before {
+    border-width: 0 10px 10px 0;
+    border-right-color: #222;
+    left: 0;
+}
+
+h1:after {
+    border-width: 0 0 10px 10px;
+    border-left-color: #222;
+    right: 0;
 }
