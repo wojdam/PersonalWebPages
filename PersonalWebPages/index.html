@@ -1,53 +1,78 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head lang="en">
-    <meta charset="UTF-8"/>
-    <title>Martin Vojík - Personal pages</title>
-    <link rel="stylesheet" type="text/css" href="indexStyleSheet.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<html>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .affix {
+            top: 0;
+            width: 100%;
+        }
+
+            .affix + .container-fluid {
+                padding-top: 70px;
+            }
+    </style>
 </head>
-<body id="mainStyle">
-<!--Main menu navigation-->
-    <ul id="menuNavigation">
-        <li>
-            <a href="#" onclick="redirectTo('Home')">Home</a>
-        </li>
-        <li>
-            <a href="#">My Projects</a>
-            <ul>
-                <li><a href="#" onclick="redirectTo('MyCNCMachine')">My CNC machine</a></li>
-                <li><a href="#" onclick="redirectTo('Arduino')">Arduino programming</a></li>
-                <li><a href="#" onclick="redirectTo('DevelopmentTools')">Development tools</a></li>
-                <li><a href="#" onclick="redirectTo('LoremIpsum')">Web design</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">Work</a>
-            <ul>
-                <li><a href="TestNewMenu.html">New Menu Bootstrap</a></li>
-                <li><a href="#" onclick="redirectTo('TestjQuery')">Testing jQuery</a></li>
-                <li><a href="#">Work 3</a></li>
-                <li><a href="#">Work 4</a></li>
-                <li><a href="#">Work 5</a></li>
-                <li><a href="#">Work 6</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#" onclick="redirectTo('AboutMe')">About</a>
-        </li>
-        <li>
-            <a href="#" onclick="redirectTo('ContactMe')">Contact</a>
-        </li>
-    </ul>
+<body>
 
-<div class="mainDocumentStyle" id="documentContent">
-</div>
+    <header class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+        <h1>Bootstrap Affix Example</h1>
+        <h3>Fixed (sticky) navbar on scroll, using jQuery</h3>
+        <p>Scroll this page to see how the navbar behaves.</p>
+        <p>The navbar is attached to the top of the page after you have scrolled passed the header element.</p>
+    </header>
 
-<footer id="footerStyle">
-    <div id="footerStyleText">
-        &copy; 2015 Created by Martin Vojík
-    </div>
-</footer>
+    <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav" id="menuRoot">
+            <li id="navHome"><a href="#" onclick="redirectTo('Home', 'navHome')">Home</a></li>
+
+            <li id ="navMyProject" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    My Projects
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" id="nva">
+                    <li><a href="#" onclick="redirectTo('MyCNCMachine','navMyProject')">My CNC machine</a></li>
+                    <li><a href="#" onclick="redirectTo('Arduino','navMyProject')">Arduino programming</a></li>
+                    <li><a href="#" onclick="redirectTo('DevelopmentTools','navMyProject')">Development tools</a></li>
+                    <li><a href="#" onclick="redirectTo('LoremIpsum','navMyProject')">Web design</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown" id="navMyWork">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    My Work
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="redirectTo('TestjQuery','navMyWork')">Testing jQuery</a></li>
+                    <li><a href="#">Submenu 1-2</a></li>
+                    <li><a href="#">Submenu 1-3</a></li>
+                </ul>
+            </li>
+
+            <li id="navAboutMe"><a href="#" onclick="redirectTo('AboutMe','navAboutMe')">About</a></li>
+
+            <li id="navContactMe"><a href="#" onclick="redirectTo('ContactMe','navContactMe')">Contact</a></li>
+        </ul>
+    </nav>
+
+<!--Main content-->
+<div class="container" id="documentContent"></div>
+
 <script src="MyScripts/Router.js"></script>
+<script>
+    $(document).ready(function() {
+        /* affix the navbar after scroll below header */
+        $(".navbar").affix({ offset: { top: $("header").outerHeight(true) } });
+    });
+</script>
+
 </body>
 </html>
+
