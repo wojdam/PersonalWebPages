@@ -21,4 +21,4 @@ var redirectTo = function(page, selItem) {
 
         $("#" + selItem).addClass("active");
     });
-};
+}

@@ -187,13 +187,13 @@ h1 {
     text-align: left;
     position: relative;
     color: #999;
-    margin: 0px -47px 30px -47px;
-    padding: 10px 0; 
-    text-shadow: 0 1px rgba(0,0,0,.8);
+    margin: 1% -6% 30px -6%;
+    padding: 50px 3% 10px 3%;
     background-image:  linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
     -moz-box-shadow: 0 2px 0 rgba(0,0,0,.3);
     -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.3);
-    box-shadow: 0 2px 0 rgba(0,0,0,.3);
+    box-shadow: 10px 5px 4px #9c9c9c;
+    text-shadow: 0 10px 0 #000;
 }
 
 h1:before, 
