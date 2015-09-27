@@ -10,5 +10,17 @@
     $("#windowHeight").text(height);
     $("#windowWidth").text(width);
 
+    $.get("AboutMe.htmlx").always(function() {
+        alert("Called always")
+    });
 
+    $.get("AboutMe.html").done(function() {
+            alert("Loaded OK.");
+        })
+        .done(function() {
+            alert("Another done.");
+        })
+        .fail(function() {
+            alert("Get fails!");
+        });
 });

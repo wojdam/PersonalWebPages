@@ -1,0 +1,4 @@
+C:\Users\Wojdam\Documents\Visual Studio 2013\Projects\PersonalWebPages\PersonalWebPages\bin\PersonalWebPages.dll
+C:\Users\Wojdam\Documents\Visual Studio 2013\Projects\PersonalWebPages\PersonalWebPages\bin\PersonalWebPages.pdb
+C:\Users\Wojdam\Documents\Visual Studio 2013\Projects\PersonalWebPages\PersonalWebPages\obj\Release\PersonalWebPages.dll
+C:\Users\Wojdam\Documents\Visual Studio 2013\Projects\PersonalWebPages\PersonalWebPages\obj\Release\PersonalWebPages.pdb

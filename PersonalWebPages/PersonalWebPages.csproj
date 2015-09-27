@@ -61,8 +61,6 @@
     <Content Include="AboutMe.html" />
     <Content Include="ContactMe.html" />
     <Content Include="Home.html" />
-    <Content Include="OldItems\index.html" />
-    <Content Include="OldItems\indexStyleSheet.css" />
     <Content Include="LoremIpsum.html" />
     <Content Include="MyCNCMachine.html" />
     <Content Include="MyScripts\Router.js" />
@@ -77,6 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\wojdam.wz.cz.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OldItems\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
