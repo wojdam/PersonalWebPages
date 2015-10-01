@@ -13,9 +13,13 @@
             width: 100%;
         }
 
-            .affix + .container-fluid {
-                padding-top: 70px;
-            }
+        .affix + .container-fluid {
+            padding-top: 70px;
+        }
+
+        /*@media (max-width: 300px) {
+            body {min-width:300px;}
+        }*/
     </style>
 </head>
 <body>
@@ -27,7 +31,7 @@
         <p>The navbar is attached to the top of the page after you have scrolled passed the header element.</p>
     </header>
 
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" style="z-index: 99999">
         <ul class="nav navbar-nav" id="menuRoot">
             <li id="navHome"><a href="#" onclick="redirectTo('Home', 'navHome')">Home</a></li>
 
@@ -63,7 +67,7 @@
     </nav>
 
 <!--Main content-->
-<div class="container" id="documentContent"></div>
+<div class="container-fluid" id="documentContent"></div>
 
 <script src="MyScripts/Router.js"></script>
 <script>
