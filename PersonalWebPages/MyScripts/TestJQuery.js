@@ -10,6 +10,53 @@
     $("#windowHeight").text(height);
     $("#windowWidth").text(width);
 
+    var local = 5;
+    console.log(local);
+
+    {// pozor ikdyz je v bloku definovana separatne, stejne se prepise!!!
+        var local = 9;
+        console.log(local);
+    }
+
+    console.log(local);
+
+    var mountains = function() {
+        var hill = function() {
+            return "/**\\";
+        }
+
+        var plate = function(length) {
+
+            var text = "";
+            for (var i = 0; i < length; i++) {
+                text += "_";
+            }
+            return text;
+        }
+
+        var xxx = plate(3);
+        xxx += hill();
+        xxx += plate(4);
+        xxx += hill();
+        xxx += plate(2);
+
+        return xxx;
+    }
+
+    console.log(mountains());
+
+
+
+    //function chicken() {
+    //    return egg();
+    //}
+
+    //function egg() {
+    //    return chicken();
+    //}
+
+    //console.log(chicken());
+
     //$.get("AboutMe.htmlx").always(function() {
     //    alert("Called always")
     //});
