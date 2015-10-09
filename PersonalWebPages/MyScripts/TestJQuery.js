@@ -45,7 +45,70 @@
 
     console.log(mountains());
 
+    // function without closure
+    function sayHello1(name) {
+        var text = "Hello " + name;
+        var sayAlert = function() {
+            console.log(text);
+        }
+        sayAlert();
+    }
 
+    sayHello1("Martin");
+
+    // closure
+    function sayHello2(name) {
+        var text = "Hello2 " + name;
+        var sayAlert = function() {
+            console.log(text);  
+        }
+        return sayAlert;
+    }
+
+    var say2 = sayHello2("Vojik");
+    say2();
+
+    // closure
+    function sayHello3(name) {
+        var text = "Hello3 " + name;
+        var sayAlert = function () {
+            console.log(text);
+        }
+
+        text += "*";
+        return sayAlert;
+    }
+
+    var say3 = sayHello3("Maartos");
+    say3();
+    say3();
+
+    var text = "maly velky String";
+    console.log(text.toUpperCase());
+
+    var arr = [];
+    arr.push("Ahoj");
+    arr.push("jak");
+    arr.push("se");
+    arr.push("vede");
+
+    console.log(arr);
+
+    console.log(arr.join(" "));
+
+    var objectT = {
+        manager: false,
+        event: ["meeting", "work"]
+    };
+
+    console.log(objectT);
+
+    console.log("manager" in objectT);
+    console.log("employee" in objectT);
+
+    delete(objectT.manager);
+
+    console.log("manager" in objectT);
 
     //function chicken() {
     //    return egg();
